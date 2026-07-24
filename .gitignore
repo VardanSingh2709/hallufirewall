@@ -1,0 +1,10 @@
+# Never commit real API keys / secrets
+.env
+
+# Python cache and virtual environment
+__pycache__/
+*.pyc
+venv/
+
+# OS-specific junk files
+.DS_Store

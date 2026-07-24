@@ -1,0 +1,12 @@
+# Core dependencies for the hallufirewall package.
+# These match exactly what's declared in pyproject.toml under [project.dependencies].
+#
+# Only two packages are needed: the NLI verifier (nli_direct.py) uses
+# transformers + torch to load and run the pretrained MNLI model locally.
+# Everything else (the LLM-judge, claim extraction) works via dependency
+# injection -- the user supplies their own llm_client function, so no
+# specific LLM provider SDK (Anthropic, Gemini, OpenAI, etc.) is required
+# by the package itself.
+
+transformers>=4.40.0
+torch>=2.0.0

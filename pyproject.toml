@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hallufirewall"
+version = "0.1.0"
+description = "A hallucination detection firewall for RAG systems"
+readme = "README.md"
+requires-python = ">=3.10"
+
+dependencies = [
+    "transformers>=4.40.0",
+    "torch>=2.0.0",
+]
+
+[tool.setuptools.packages.find]
+include = ["hallufirewall*"]
